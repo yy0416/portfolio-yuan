@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ 'Accueil'|trans }}
+{% endblock %}
+
+{% block body %}
+	<div class="home-container">
+		<section class="hero">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6 hero-text">
+						<div class="typing-container">
+							<span id="typed-text"></span>
+							<span class="cursor">|</span>
+						</div>
+						<div class="hero-buttons">
+							<a href="{{ path('app_projects') }}" class="btn-neon btn-neon-filled">
+								{{ 'Mes Projets'|trans }}
+							</a>
+							<a href="{{ path('app_contact') }}" class="btn-neon">
+								{{ 'Contact'|trans }}
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="image-container">
+							<img src="{{ asset('images/portfolio_1.webp') }}" alt="Photo de profil" class="profile-image">
+							<div class="glow-effect"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+{% endblock %}
+
+{% block javascripts %}
+	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+new Typed('#typed-text', {
+strings: [
+'{{ "intro.line1"|trans }}^1000', '{{ "intro.line2"|trans }}^500', '{{ "intro.line3"|trans }}^1000'
+],
+typeSpeed: 50,
+backSpeed: 30,
+backDelay: 1000,
+startDelay: 500,
+loop: true,
+showCursor: false
+});
+});
+	</script>
+{% endblock %}
