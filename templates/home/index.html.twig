@@ -13,20 +13,54 @@
 						<div class="typing-container">
 							<span id="typed-text"></span>
 							<span class="cursor">|</span>
+
+
 						</div>
 						<div class="hero-buttons">
 							<a href="{{ path('app_projects') }}" class="btn-neon btn-neon-filled">
 								{{ 'Mes Projets'|trans }}
 							</a>
-							<a href="{{ path('app_contact') }}" class="btn-neon">
-								{{ 'Contact'|trans }}
-							</a>
+
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="image-container">
 							<img src="{{ asset('images/portfolio_1.webp') }}" alt="Photo de profil" class="profile-image">
 							<div class="glow-effect"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="about-content">
+							<h2 class="glow-title">{{ 'about.title'|trans }}</h2>
+							<div class="about-intro">
+								<p class="lead">{{ 'about.intro'|trans }}</p>
+							</div>
+
+							<div class="services-list">
+								<h3 class="services-title">{{ 'about.services.title'|trans }}</h3>
+								<ul>
+									<li>{{ 'about.services.item1'|trans }}</li>
+									<li>{{ 'about.services.item2'|trans }}</li>
+									<li>{{ 'about.services.item3'|trans }}</li>
+									<li>{{ 'about.services.item4'|trans }}</li>
+								</ul>
+							</div>
+
+							<div class="cta-section">
+								<p class="cta-text">{{ 'about.cta'|trans }}</p>
+								<div class="cta-button">
+									<a href="{{ path('app_contact') }}" class="btn-neon">
+										{{ 'Contact'|trans }}
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -12,3 +12,26 @@
 "Message envoyé avec succès": "Message envoyé avec succès"
 "Merci de votre message. Je vous répondrai dans les plus brefs délais.": "Merci de votre message. Je vous répondrai dans les plus brefs délais."
 "Retour à l'accueil": "Retour à l'accueil"
+about:
+  title: "Mon Expertise"
+  intro: "Développeuse web spécialisée en création de sites sur mesure. Vous cherchez un site moderne, performant et optimisé pour votre activité ? Je vous accompagne dans le développement de sites vitrines, e-commerce et applications web adaptées à vos besoins."
+  services:
+    title: "💡 Ce que je propose :"
+    item1: "✔ Développement sur mesure avec PHP (Symfony), WordPress, WooCommerce"
+    item2: "✔ Création de sites e-commerce optimisés pour le SEO "
+    item3: "✔ Expérience utilisateur fluide et responsive "
+    item4: "✔ Gestion de bases de données et intégration d'ERP "
+  cta: "🚀 Faites passer votre projet au niveau supérieur avec un site performant et adapté à votre activité. Contactez-moi pour en discuter !"
+
+# 添加项目相关的翻译
+"Projet PHP/Symfony restaurant vente en ligne": "Projet PHP/Symfony restaurant vente en ligne"
+"Application web développée avec Symfony 6": "Application web développée avec Symfony 6"
+"Authentication utilisateur": "Authentication utilisateur"
+"CRUD opérations": "CRUD opérations"
+"API REST": "API REST"
+"Interface responsive": "Interface responsive"
+"Projet Java/Angular Kanban": "Projet Java/Angular Kanban"
+"Application full-stack avec Spring Boot et Angular": "Application full-stack avec Spring Boot et Angular"
+"Architecture microservices": "Architecture microservices"
+"Interface moderne": "Interface moderne"
+"Gestion en temps réel": "Gestion en temps réel"

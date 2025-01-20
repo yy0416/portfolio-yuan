@@ -5,37 +5,37 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
-class ProjectController extends AbstractController
+class ProjectController extends BaseController
 {
     #[Route('/projects', name: 'app_projects')]
     public function index(): Response
     {
         $projects = [
             [
-                'title' => 'Projet PHP/Symfony restaurant vente en ligne',
-                'description' => 'Application web développée avec Symfony 6',
+                'title' => $this->trans('Projet PHP/Symfony restaurant vente en ligne'),
+                'description' => $this->trans('Application web développée avec Symfony 6'),
                 'technologies' => ['PHP 8', 'Symfony 6', 'MySQL', 'Bootstrap', 'JavaScript'],
                 'features' => [
-                    'Authentication utilisateur',
-                    'CRUD opérations',
-                    'API REST',
-                    'Interface responsive'
+                    $this->trans('Authentication utilisateur'),
+                    $this->trans('CRUD opérations'),
+                    $this->trans('API REST'),
+                    $this->trans('Interface responsive')
                 ],
-                'image' => 'images/symfony-project.jpg',
+                'image' => 'images/symfony_ecommerce.png',
                 'github' => 'https://github.com/yy0416/ChezHibou.git'
             ],
             [
-                'title' => 'Projet Java/Angular',
-                'description' => 'Application full-stack avec Spring Boot et Angular',
+                'title' => $this->trans('Projet Java/Angular Kanban'),
+                'description' => $this->trans('Application full-stack avec Spring Boot et Angular'),
                 'technologies' => ['Java', 'Spring Boot', 'Angular', 'TypeScript', 'PostgreSQL'],
                 'features' => [
-                    'Architecture microservices',
-                    'Interface moderne',
-                    'Gestion en temps réel',
-                    'Tests automatisés'
+                    $this->trans('Architecture microservices'),
+                    $this->trans('Interface moderne'),
+                    $this->trans('Gestion en temps réel')
                 ],
-                'image' => 'images/angular-project.jpg',
+                'image' => 'images/angular_kanban.jpg',
                 'github' => 'https://github.com/votre-compte/projet-angular'
             ]
         ];
